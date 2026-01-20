@@ -17,7 +17,7 @@ def inputForFirstTime(username, password):
 def storeInDB(username, password):
     stringpass = password.decode("utf-8") if isinstance(password, bytes) else str(password)
     # We want to send it w/ username to a sqlite db to be stored 
-    conn = sqlite3.connect("C:\\Users\\rayaa\\OneDrive\\Documents\\burgershop\\users.db")
+    conn = sqlite3.connect("C:\\Examplefilepath\\users.db")
     cursor = conn.cursor()
 
     # checking if the user is already in the db
